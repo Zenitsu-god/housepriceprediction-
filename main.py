@@ -56,5 +56,9 @@ test_data = pd.read_csv(test_data_path)
 # The list of columns is stored in a variable called features
 test_X = test_data[features]
 
+# Check your answer (To get credit for completing the exercise, you must get a "Correct" result!)
+step_1.check()
+# step_1.solution()
+
 # make predictions which we will submit. 
 test_preds = rf_model.predict(test_X)
