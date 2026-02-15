@@ -1,21 +1,10 @@
-import pandas as pd
-from sklearn.tree import DicisionTreeRegressor
+# Set up code checking
+from learntools.core import binder
+binder.bind(globals())
+from learntools.machine_learning.ex7 import *
 
-iowa_file_path =""
-
-home_data = pd.read_csv(iowa_file_path)
-
-home_data.describe()
-
-
-y = home_data.SalesPrice
-feature_columns = []
-
-X=home_data[feature_columns]
-
-iowa_model = DicisionTreeRegressor(random_state =1)
-
-iowa_model.fit(X,y)
-
-print(iowa_model.predict(X))
-
+# Set up filepaths
+import os
+if not os.path.exists("../input/train.csv"):
+    os.symlink("../input/home-data-for-ml-course/train.csv", "../input/train.csv")  
+    os.symlink("../input/home-data-for-ml-course/test.csv", "../input/test.csv") 
