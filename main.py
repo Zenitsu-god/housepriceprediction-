@@ -18,3 +18,6 @@ iowa_model = DicisionTreeRegressor(random_state =1)
 iowa_model.fit(X,y)
 
 print(iowa_model.predict(X))
+
+
+opoerpfo
