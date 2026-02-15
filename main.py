@@ -19,5 +19,3 @@ iowa_model.fit(X,y)
 
 print(iowa_model.predict(X))
 
-
-opoerpfo
